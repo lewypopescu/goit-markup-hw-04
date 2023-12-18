@@ -474,6 +474,31 @@ body {
   margin-bottom: 16px;
 }
 
+.svg-footer-icon-social-media {
+  background-color: var(--IRIS, #4d5ae5);
+  fill: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.svg-footer-icon-list-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+  margin-bottom: 16px;
+}
+
+.svg-footer-icon-social-media:hover,
+.svg-footer-icon-social-media:focus {
+  background-color: #404bbf;
+}
+
 /* ./PORTOFOLIO.HTML */
 
 /* the list of buttons */
