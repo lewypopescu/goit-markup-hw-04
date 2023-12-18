@@ -33,6 +33,8 @@ svg {
   background: var(--white, #fff);
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   display: flex;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .section {
@@ -163,7 +165,7 @@ body {
 /* hero content section */
 
 .hero-image-section {
-  --hero-image-bg-color: rgba(46, 47, 66, 0.8);
+  --hero-image-bg-color: rgba(46, 47, 66, 0.7);
 
   background-image: linear-gradient(
       var(--hero-image-bg-color),
@@ -172,9 +174,11 @@ body {
     url(../images/peopleoffice.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 188px 0;
   display: block;
   justify-content: center;
+  max-width: 1440px;
 }
 
 .hero-image-header {
@@ -403,7 +407,8 @@ body {
 
 .svg-icon-company {
   display: flex;
-  fill: #8e8f99;
+  /* fill: #8e8f99; ok */
+  color: #8e8f99;
   align-items: center;
   justify-content: center;
   width: 168px;
@@ -422,7 +427,12 @@ body {
 
 .svg-icon-company:hover,
 .svg-icon-company:focus {
-  background-color: #404bbf;
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.svg-fillcurrentcolor-companies {
+  fill: currentColor;
 }
 
 /* footer section */
@@ -469,7 +479,7 @@ body {
 }
 
 .footer-logo-paragraf {
-  gap: 120px;
+  margin-right: 120px;
 }
 
 .footer-social-media-paragraf {
@@ -512,7 +522,7 @@ body {
 }
 
 .svgfill {
-  fill: var(--WHITE);
+  fill: #f4f4f4fd;
 }
 
 /* ./PORTOFOLIO.HTML */
@@ -552,6 +562,8 @@ body {
   background-color: var(--OCEAN);
   color: var(--WHITE);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*list of portfolio projects */
@@ -588,4 +600,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
