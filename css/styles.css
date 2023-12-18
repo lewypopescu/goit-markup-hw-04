@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+svg {
+  display: block;
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -159,7 +163,15 @@ body {
 /* hero content section */
 
 .hero-image-section {
-  background-color: var(--NAVY-BLUE, #2e2f42);
+  --hero-image-bg-color: rgba(46, 47, 66, 0.8);
+
+  background-image: linear-gradient(
+      var(--hero-image-bg-color),
+      var(--hero-image-bg-color)
+    ),
+    url(../images/peopleoffice.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 188px 0;
   display: block;
   justify-content: center;
@@ -228,6 +240,45 @@ body {
   align-items: flex-start;
   gap: 8px;
 }
+
+.svg-icon {
+  background-color: var(--CLOUD, #f4f4fd);
+  fill: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  padding: 24px 100px;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.svg-icon-social-media {
+  background-color: var(--IRIS, #4d5ae5);
+  fill: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.svg-icon-list-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 0;
+}
+
+.svg-icon-social-media:hover,
+.svg-icon-social-media:focus {
+  background-color: #404bbf;
+}
+
 .trait-header {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
@@ -337,6 +388,43 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* fourth section */
+
+.section-fourth-header {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 111.111%; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.svg-icon-company {
+  display: flex;
+  fill: #8e8f99;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.svg-icon-list-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.svg-icon-company:hover,
+.svg-icon-company:focus {
+  background-color: #404bbf;
+}
+
 /* footer section */
 
 .footer-container {
@@ -373,6 +461,17 @@ body {
 
 .logo-span-dark-footer {
   color: var(--CLOUD);
+}
+
+.footer-social-media-title {
+  color: var(--WHITE);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
 }
 
 /* ./PORTOFOLIO.HTML */
