@@ -439,10 +439,13 @@ body {
 
 .footer-container {
   background-color: var(--NAVY-BLUE, #2e2f42);
-  flex-direction: column;
+  display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: left;
   padding: 100px 0;
+  gap: 1px;
+  align-items: baseline;
+  padding-left: 156px;
 }
 
 .footer-logo {
@@ -466,7 +469,7 @@ body {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.32px;
-  max-width: 450px;
+  width: 264px;
 }
 
 .logo-span-dark-footer {
@@ -509,6 +512,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  padding-left: 0px;
 }
 
 .svg-footer-icon-social-media-listitem {
